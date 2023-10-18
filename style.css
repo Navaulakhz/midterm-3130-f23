@@ -1,0 +1,353 @@
+/* Example media query for tablet */
+@media (max-width: 768px) {
+    /* Adjust styles for tablet view */
+}
+
+/* Example media query for mobile */
+@media (max-width: 480px) {
+    /* Adjust styles for mobile view */
+}
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ECF0F1;
+    color: #34495E;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #E74C3C; /* Secondary color for links */
+}
+
+/* Navigation */
+nav {
+    background-color: #2C3E50; /* Primary color */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ECF0F1; /* Background color used for contrast */
+}
+
+/* Product Cards */
+.sneaker-card {
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sneaker-card h2 {
+    color: #2C3E50; /* Primary color */
+    margin-top: 0;
+}
+
+.sneaker-card h2 a:hover {
+    color: #F39C12; /* Accent color for hover */
+}
+
+/* Buttons, Links Hover States */
+button:hover, 
+a:hover {
+    opacity: 0.8;
+}
+
+/* Navbar Logo */
+#logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Full Screen Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('4.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero-content h1, .hero-content p {
+    color: #ECF0F1; /* Light color for contrast */
+    margin: 0;
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+/* Full Screen Sections */
+.full-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+}
+
+.products {
+    background-color: #FFF;
+    background-image: url('11.jpg');
+    background-size: cover;
+    background-position: center;
+
+    /* Additional styles for products can be added here */
+}
+
+.contact-us {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    margin-top: 20px;
+}
+
+.contact-us form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-us input, .contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #34495E;
+    color: #ECF0F1;
+    outline: none;
+}
+
+.contact-us button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E74C3C;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-us button:hover {
+    background-color: #F39C12;
+}
+
+
+
+
+
+
+/* Navbar with Logo on the Left and Links Grouped on the Right */
+nav {
+    background-color: #2C3E50; /* Primary color */
+    padding: 10px 20px;
+    display: flex;  /* Use Flexbox for layout */
+    justify-content: space-between;  /* Space between logo and links */
+    align-items: center;  /* Vertically align items */
+}
+
+#logo {
+    height: 50px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #ECF0F1; /* Background color used for contrast */
+}
+
+/* Grouped links container */
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+/* ... Rest of the CSS ... */
+/* ... Existing CSS ... */
+
+/* Footer Styles */
+footer {
+    background-color: #2C3E50; /* Primary color */
+    padding: 20px 0;
+    color: #ECF0F1; /* Light color for contrast */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+.footer-links, .social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a, .social-media a {
+    color: #ECF0F1; /* Light color for contrast */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover, .social-media a:hover {
+    opacity: 0.8;
+}
+
+.social-media img {
+    width: 24px; /* Adjust based on your icons' size */
+    height: 24px; /* Adjust based on your icons' size */
+}
+
+
+.products {
+    background-color: #FFF;
+    padding: 10px 0;
+    text-align: center;
+    flex-wrap: wrap;
+   
+}
+
+.products-grid {
+   
+    justify-content: space-between;
+
+    max-width: 1200px; /* Optional: You can set a max-width if needed */
+    margin: 0 auto; /* Center the grid container */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between rows */
+    
+}
+
+.product-card {
+   
+    transition: 0.3s; /* For hover effect */
+    width: 24%; /* Allows for 4 product cards per row with a little space in between */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 2px;
+    margin-bottom: 20px; /* Add space below each product card */
+    height: 230px;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product-card img {
+    max-width: 100%; /* Ensure images do not exceed their containers */
+    height: 80px;
+    margin-bottom: 10px; /* Space between image and product name */
+    display: block; /* Display as block to remove any bottom spacing */
+    max-height: 200px; 
+    object-fit: cover; /* This will ensure the image covers the area without being stretched */
+}
+
+
+.product-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%; /* 5% padding for a bit of space on the sides */
+    background-color: #ECF0F1; /* Light background color for contrast */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-image img {
+    width: 50%; /* Take up half the width of the card */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto;
+    margin-right: 20px; /* Space between image and info */
+}
+
+.detail-info {
+    width: 45%; /* Take up slightly less than half the width to account for margins/padding */
+    text-align: left; /* Align text to the left */
+}
+
+.detail-info button {
+    padding: 10px 20px;
+    background-color: #2C3E50; /* Dark background color for contrast */
+    color: #ECF0F1; /* Light text color for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.detail-info button:hover {
+    background-color: #E74C3C; /* Change color on hover */
+}
+
+/* Full-screen-width Product Detail Card */
+.product-detail-fullscreen {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background-color: #ECF0F1; /* Light background color for the card */
+}
+
+.detail-image, .detail-info {
+    flex: 1; /* Divide the screen into two equal halves */
+    padding: 20px; /* Some padding for spacing */
+}
+
+.detail-image img {
+    width: 100%; 
+    height: auto;
+    max-height: 80vh; /* Limit the height to avoid overflow */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+
+.detail-info {
+    text-align: left; /* Align text to the left */
+}
+
+.detail-info button {
+    padding: 10px 20px;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.detail-info button:hover {
+    background-color: #E74C3C;
+}
+
+
+.products, .about, .contact {
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding: 50px 0; /* Add padding to give each section some breathing room */
+}
